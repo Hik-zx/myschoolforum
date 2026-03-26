@@ -1,0 +1,34 @@
+{
+  "name": "my-project-front",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueup/vue-quill": "^1.2.0",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
+    "element-plus": "^2.7.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "qs": "^6.12.1",
+    "quill-delta-to-html": "^0.12.1",
+    "quill-image-resize-vue": "^1.0.4",
+    "quill-image-super-solution-module": "^2.0.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "less": "^4.2.0",
+    "sass": "^1.75.0",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.2.8"
+  }
+}

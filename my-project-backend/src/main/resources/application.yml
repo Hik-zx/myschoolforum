@@ -1,0 +1,61 @@
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  # 文件上传
+  servlet:
+    multipart:
+      # 单个文件大小
+      max-file-size: 10MB
+      # 设置总上传的文件大小
+      max-request-size: 40MB
+  #消息队列
+  rabbitmq:
+    addresses: 192.168.52.128
+    username: admin
+    password: 123456
+    virtual-host: /test
+  #邮箱验证码配置
+  mail:
+    #smtp服务主机  qq邮箱则为smtp.qq.com;163邮箱是smtp.163.com
+    host: smtp.163.com
+    #服务协议
+    protocol: smtp
+    # 编码集
+    default-encoding: UTF-8
+    #发送邮件的账户
+    username: 13540021277@163.com
+    #授权码
+    password: QNWNHVTDWWFZMZRK
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/schoolcommunicate?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #springsecurity框架
+  security:
+    jwt:
+      key: lcy
+      expire: 7
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+      database: 0
+  minio:
+    endpoint: 'http://localhost:9000'
+    username: 'admin'
+    password: 'password'
+  weather:
+    key: a510b89aa72d4d419b1236bc4faea4aa
+
